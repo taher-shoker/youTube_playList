@@ -1,9 +1,11 @@
+import AppRoutes from "routes";
 import "shared/assets/styles/main.scss";
 
 function App() {
   return (
     <div className="app">
-      <div className="container">youTube Play List</div>
+    
+      <AppRoutes />
     </div>
   );
 }
