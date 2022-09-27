@@ -1,0 +1,21 @@
+body {
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $dimmed_half
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $primary;
+  }
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;   
+}
+ 

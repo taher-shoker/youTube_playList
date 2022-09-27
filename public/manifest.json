@@ -1,0 +1,10 @@
+{
+  "short_name": "YouTube PlayList",
+  "name": "YouTube PlayList",
+  "icons": [
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
