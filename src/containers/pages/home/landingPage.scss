@@ -1,6 +1,81 @@
 .home {
    background-color: $background;
-   margin-bottom: 60px;
- 
- 
+   padding-top: 75px;
+   .head-info{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+      .filter{
+          background-color: transparent;
+          border: unset;
+          display: flex;
+          align-items: center;
+          font-size: 18px;
+          text-transform: uppercase;
+          color: $dimmed;
+          img{
+              width: 30px;
+              height: 30px;
+              margin: 0 10px;
+          }
+      }
+      @media screen and (max-width: $small) {
+        display: none;
+    }
+   }
+   .select-info{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: $small) {
+        display: flex;
+    }
+   }
+   .play-list{
+
+    ul{
+        padding: 0;
+        list-style: none;
+        .item{
+            margin: 16px 0;
+            display: flex;
+            align-items: flex-start;
+            .item-info{
+                margin: 0 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                word-break: break-all;
+                .title{
+                    font-size: 20px;
+                    font-weight: bolder;
+                    color: $dark;
+                    @media screen and (max-width: $small) {
+                        font-size: 14px;
+                    }
+                }
+                .sub-title{
+                    margin: 16px 0;
+                    color: $dimmed;
+                    @media screen and (max-width: $small) {
+                        margin: 6px 0;
+                    }
+                }
+                p{
+                    padding: 16px 0;
+                    color: $dimmed;
+                    @media screen and (max-width: $small) {
+                        display: none;
+                    }
+                }
+
+            }
+        }
+    }
+   }
+   @media screen and (max-width: $small) {
+    padding-top: 0;
+}
+  
 }

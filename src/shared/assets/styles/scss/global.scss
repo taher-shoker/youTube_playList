@@ -1,3 +1,7 @@
+// verabiles widths
+$small: 512px;
+
+
 body {
   scroll-behavior: smooth;
 
@@ -13,9 +17,26 @@ body {
     background: $primary;
   }
 }
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+select{
+  width: 150px;
+  height: 42px;
+  border: 1px solid $dimmed;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
 .container{
     width: 80%;
-    margin: 0 auto;   
+    margin: 0 auto;
+    padding: 5px;
+    @media screen and (max-width: $small) {
+      width:100%;
+     }
 }
  
+
