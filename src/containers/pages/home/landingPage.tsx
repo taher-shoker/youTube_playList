@@ -3,6 +3,7 @@ import { usePlayList } from "shared/hooks/usePlyList";
 import FilterIcon from "shared/assets/images/filter-icon.svg";
 import ListItem from "./list-item";
 import { Item } from "Types/types";
+import LoadingSpinner from "shared/component/spinner/Loading";
 
 const Home = () => {
    const {playList,isLoading,isSuccess } = usePlayList()
@@ -36,6 +37,9 @@ const Home = () => {
               <ListItem item={p.snippet} key={p.id.videoId} />
             ))}
           </ul>)}
+          {
+            isLoading && <LoadingSpinner/>
+          }
         </div>
       </div>
     </div>
