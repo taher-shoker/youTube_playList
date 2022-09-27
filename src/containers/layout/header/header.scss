@@ -1,0 +1,30 @@
+.header{
+    border-bottom: 1px solid $dimmed;
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                fill: $error;
+                width: 80px;
+                height: 80px;
+            }
+            span{
+                text-transform: capitalize;
+                font-weight: 900;
+                font-size: 30px;
+                sup{
+                    text-transform: uppercase;
+                    color: $dimmed;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
