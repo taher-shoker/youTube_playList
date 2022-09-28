@@ -6,6 +6,6 @@ export const filterAtom = atom({
         part: "snippet",
         q: '',
         type:'channel,video,playlist',
-        key: 'AIzaSyC8_CkmsuyqyAWdZhz8au42kTkfcJuHWbk'
+        key: '' // put your APIKey
     }
 })
