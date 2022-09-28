@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setup Instructions 
+Go to filter.ts file in store folder and put your API key
+[Settings up API keys](https://support.google.com/googleapi/answer/6158862?hl=en#).
+
 ## Available Scripts
 
 In the project directory, you can run:
